@@ -41,3 +41,11 @@ else {
  print(errorString)
 }
 
+// Range
+(1...5).forEach { num in print(num) }
+
+// Enumerated
+for (i, n) in (5...10).enumerated() {
+    print(n)
+}
+
