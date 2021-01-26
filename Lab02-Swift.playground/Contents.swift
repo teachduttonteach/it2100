@@ -17,9 +17,7 @@ let langArray: [String] = ["Swift", "Objective-C", "HTML", "CSS", "JavaScript"]
 // Short way
 langArray.forEach { lang in print(lang) }
 // Long way
-for lang in langArray {
-    print(lang)
-}
+for lang in langArray { print(lang) }
 
 // An optional value is a variable that can have a value or no value at all
 
@@ -49,3 +47,13 @@ for (i, n) in (5...10).enumerated() {
     print(n)
 }
 
+// Combining full name
+let firstName: String = "John", lastName: String = "Dutton", stringOne: String = " is mastering ", stringTwo: String = "the Swift Programming language"
+let stringSum: String = "\(firstName) \(lastName)\(stringOne)\(stringTwo)"
+print("The total is", stringSum)
+
+// Multiply function
+func multiply(numOne: Int, numTwo: Int) -> Int {
+    return numOne * numTwo
+}
+print(multiply(numOne: 6, numTwo: 13))
