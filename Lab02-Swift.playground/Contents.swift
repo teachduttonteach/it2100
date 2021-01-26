@@ -42,7 +42,7 @@ else {
 // Range
 (1...5).forEach { num in print(num) }
 
-// Enumerated
+// Enumerated; is this what you wanted? It's a sort of weird way to use an enumeration
 for (i, n) in (5...10).enumerated() {
     print(n)
 }
@@ -50,6 +50,7 @@ for (i, n) in (5...10).enumerated() {
 // Combining full name
 let firstName: String = "John", lastName: String = "Dutton", stringOne: String = " is mastering ", stringTwo: String = "the Swift Programming language"
 let stringSum: String = "\(firstName) \(lastName)\(stringOne)\(stringTwo)"
+// I'm not sure why I'm "summing" a String, but ...
 print("The total is", stringSum)
 
 // Multiply function
@@ -57,3 +58,25 @@ func multiply(numOne: Int, numTwo: Int) -> Int {
     return numOne * numTwo
 }
 print(multiply(numOne: 6, numTwo: 13))
+
+// Dog class
+class Dog {
+    var breed: String
+    var name: String
+    
+    init(breed: String = "Mix", name: String = "Bosworth") {
+        self.breed = breed
+        self.name = name
+    }
+    
+    func bark() {
+        print("\(name) is barking")
+    }
+    
+    func display() {
+        print("\(name) is a dog of breed \(breed)")
+    }
+}
+let newDog = Dog(breed: "Shepherd", name: "Major")
+newDog.bark()
+newDog.display()
