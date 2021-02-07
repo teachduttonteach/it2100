@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AZd-dX-fdd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chapter03_WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="Lab03_WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,10 +62,110 @@
                             <constraint firstItem="VTq-IF-0tw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xmh-uM-kc0"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" id="YgJ-He-ysb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="53.571428571428569"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="zHC-BC-EpE">
+            <objects>
+                <viewController id="hY5-7A-B7v" customClass="MapViewController" customModule="Lab03_WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="Kc4-o3-iwq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </mapView>
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="DDl-Wy-lRB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5zv-lZ-jo3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1597.1014492753625" y="53.571428571428569"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DYc-ty-rsb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AZd-dX-fdd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3wm-C6-9aN">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hY5-7A-B7v" kind="relationship" relationship="viewControllers" id="C7W-eC-eo3"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="maJ-R8-FNR"/>
+                        <segue destination="X7a-8g-Aso" kind="relationship" relationship="viewControllers" id="mmx-Om-32W"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vrk-gu-915" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686.95652173913049" y="53.571428571428569"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="S7c-7Y-FwM">
+            <objects>
+                <viewController id="X7a-8g-Aso" customClass="QuizViewController" customModule="Lab03_WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eOF-lQ-fb1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpU-ai-yVe">
+                                <rect key="frame" x="158" y="209" width="98" height="30"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="X7a-8g-Aso" eventType="touchUpInside" id="mi2-xK-CH3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNp-rI-hB9">
+                                <rect key="frame" x="160.5" y="433" width="93" height="30"/>
+                                <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="X7a-8g-Aso" eventType="touchUpInside" id="bf5-rP-g8y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="791-y7-7m7">
+                                <rect key="frame" x="194.5" y="334" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veH-n0-d2y">
+                                <rect key="frame" x="194.5" y="138" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VJN-9l-S66"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="veH-n0-d2y" firstAttribute="top" secondItem="VJN-9l-S66" secondAttribute="top" constant="94" id="5TO-sN-X8n"/>
+                            <constraint firstItem="dNp-rI-hB9" firstAttribute="centerY" secondItem="eOF-lQ-fb1" secondAttribute="centerY" id="ADb-Uo-ZCu"/>
+                            <constraint firstItem="dNp-rI-hB9" firstAttribute="top" secondItem="791-y7-7m7" secondAttribute="bottom" constant="78" id="Jg7-ga-gYy"/>
+                            <constraint firstItem="veH-n0-d2y" firstAttribute="centerX" secondItem="eOF-lQ-fb1" secondAttribute="centerX" id="XNT-2J-DRJ"/>
+                            <constraint firstItem="WpU-ai-yVe" firstAttribute="top" secondItem="veH-n0-d2y" secondAttribute="bottom" constant="50" id="e9b-up-7KO"/>
+                            <constraint firstItem="791-y7-7m7" firstAttribute="centerX" secondItem="eOF-lQ-fb1" secondAttribute="centerX" id="ou4-7Q-TBs"/>
+                            <constraint firstItem="WpU-ai-yVe" firstAttribute="centerX" secondItem="eOF-lQ-fb1" secondAttribute="centerX" id="tLb-iH-IEs"/>
+                            <constraint firstItem="dNp-rI-hB9" firstAttribute="centerX" secondItem="eOF-lQ-fb1" secondAttribute="centerX" id="wqD-hD-ieS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="goofy" id="rFU-km-mis"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="791-y7-7m7" id="nUb-tH-My0"/>
+                        <outlet property="questionLabel" destination="veH-n0-d2y" id="aNS-XS-Uwh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UUS-t0-hfN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2280" y="54"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="ConvertIcon" width="48.5" height="32.5"/>
+        <image name="MapIcon" width="48.5" height="32.5"/>
+        <image name="goofy" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

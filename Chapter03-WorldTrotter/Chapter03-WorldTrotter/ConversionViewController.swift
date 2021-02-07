@@ -7,13 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConversionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+        print("Yo it worked for ConversionViewController")
     }
 
 
