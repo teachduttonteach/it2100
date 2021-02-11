@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wpc-gX-MqO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="UserViewController" customModule="Lab04_BookClub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gC6-uG-FEk">
+                                <rect key="frame" x="174" y="431" width="66" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Major" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C5X-jP-Wqx">
+                                <rect key="frame" x="174.5" y="521" width="65" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gC6-uG-FEk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ATG-Z6-X1v"/>
+                            <constraint firstItem="gC6-uG-FEk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CBM-Ef-l7C"/>
+                            <constraint firstItem="C5X-jP-Wqx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zdd-2e-zx7"/>
+                            <constraint firstItem="C5X-jP-Wqx" firstAttribute="top" secondItem="gC6-uG-FEk" secondAttribute="bottom" constant="56" id="fdS-z5-Gvr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="User" image="person.fill" catalog="system" selectedImage="person.fill" id="KEf-cR-Of9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="76.339285714285708"/>
+        </scene>
+        <!--Books-->
+        <scene sceneID="2GN-r4-rYD">
+            <objects>
+                <tableViewController id="wkf-7r-mPp" customClass="TableViewController" customModule="Lab04_BookClub" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FQb-eB-f0J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCell" id="bGI-9X-yba">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bGI-9X-yba" id="Jzk-nD-9VX">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wkf-7r-mPp" id="ca2-2h-p8u"/>
+                            <outlet property="delegate" destination="wkf-7r-mPp" id="sbx-l9-5WE"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Books" image="book" catalog="system" id="Oo9-nt-9qo"/>
+                    <connections>
+                        <outlet property="bookTableView" destination="FQb-eB-f0J" id="RMg-1e-7ut"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hqh-2I-ZIo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685.5072463768117" y="-146.65178571428569"/>
+        </scene>
+        <!--Club Info-->
+        <scene sceneID="nqG-xL-q5j">
+            <objects>
+                <viewController id="Xmy-TJ-vwr" customClass="ClubInfoViewController" customModule="Lab04_BookClub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XlV-sY-Ya0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wxs-sC-hec">
+                                <rect key="frame" x="10" y="296" width="394" height="507"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">This is the IT 2100 reading club. Founded in Spring 2021 with the purpose of furthering our knowledge of Controller Views and Tab Bar Views. We hope you enjoy our selection of current and favorite books.</string>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYY-9K-3MR">
+                                <rect key="frame" x="175.5" y="44" width="63" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tbP-4G-7X5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IYY-9K-3MR" firstAttribute="centerX" secondItem="XlV-sY-Ya0" secondAttribute="centerX" id="GWJ-XA-ssw"/>
+                            <constraint firstItem="IYY-9K-3MR" firstAttribute="top" secondItem="tbP-4G-7X5" secondAttribute="top" id="NyP-r0-vKf"/>
+                            <constraint firstItem="tbP-4G-7X5" firstAttribute="bottom" secondItem="wxs-sC-hec" secondAttribute="bottom" constant="10" id="R1W-6n-tYo"/>
+                            <constraint firstItem="tbP-4G-7X5" firstAttribute="trailing" secondItem="wxs-sC-hec" secondAttribute="trailing" constant="10" id="RpV-Za-1AA"/>
+                            <constraint firstItem="wxs-sC-hec" firstAttribute="top" secondItem="tbP-4G-7X5" secondAttribute="top" constant="252" id="aM5-YP-OuU"/>
+                            <constraint firstItem="wxs-sC-hec" firstAttribute="leading" secondItem="tbP-4G-7X5" secondAttribute="leading" constant="10" id="gDH-BE-t2k"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Club Info" image="info.circle" catalog="system" id="5hm-Yj-514"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Odw-Xc-QNi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702.8985507246377" y="533.70535714285711"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="heF-gR-7Aa">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Wpc-gX-MqO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W2T-H0-SOm">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Mc5-SJ-o4z"/>
+                        <segue destination="wkf-7r-mPp" kind="relationship" relationship="viewControllers" id="euu-P1-na5"/>
+                        <segue destination="Xmy-TJ-vwr" kind="relationship" relationship="viewControllers" id="k6O-hs-I9D"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="19j-QM-7vW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="102"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
