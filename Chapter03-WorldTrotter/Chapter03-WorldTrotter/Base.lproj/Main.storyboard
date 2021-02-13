@@ -88,6 +88,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AZd-dX-fdd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3wm-C6-9aN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -149,7 +150,7 @@
                             <constraint firstItem="dNp-rI-hB9" firstAttribute="centerX" secondItem="eOF-lQ-fb1" secondAttribute="centerX" id="wqD-hD-ieS"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="goofy" id="rFU-km-mis"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="person.fill.questionmark" catalog="system" id="rFU-km-mis"/>
                     <connections>
                         <outlet property="answerLabel" destination="791-y7-7m7" id="nUb-tH-My0"/>
                         <outlet property="questionLabel" destination="veH-n0-d2y" id="aNS-XS-Uwh"/>
@@ -163,7 +164,7 @@
     <resources>
         <image name="ConvertIcon" width="48.5" height="32.5"/>
         <image name="MapIcon" width="48.5" height="32.5"/>
-        <image name="goofy" width="200" height="200"/>
+        <image name="person.fill.questionmark" catalog="system" width="128" height="104"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
