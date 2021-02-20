@@ -83,9 +83,9 @@
 		525AE05F25C6276700A59493 = {
 			isa = PBXGroup;
 			children = (
-				525AE06A25C6276700A59493 /* Chapter03-WorldTrotter */,
-				525AE08125C6276800A59493 /* Chapter03-WorldTrotterTests */,
-				525AE08C25C6276800A59493 /* Chapter03-WorldTrotterUITests */,
+				525AE06A25C6276700A59493 /* Chapter05-WorldTrotter */,
+				525AE08125C6276800A59493 /* Chapter05-WorldTrotterTests */,
+				525AE08C25C6276800A59493 /* Chapter05-WorldTrotterUITests */,
 				525AE06925C6276700A59493 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +100,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		525AE06A25C6276700A59493 /* Chapter03-WorldTrotter */ = {
+		525AE06A25C6276700A59493 /* Chapter05-WorldTrotter */ = {
 			isa = PBXGroup;
 			children = (
 				525AE06B25C6276700A59493 /* AppDelegate.swift */,
@@ -113,25 +113,25 @@
 				525AE07625C6276800A59493 /* LaunchScreen.storyboard */,
 				525AE07925C6276800A59493 /* Info.plist */,
 			);
-			path = "Chapter03-WorldTrotter";
+			name = "Chapter05-WorldTrotter";
 			sourceTree = "<group>";
 		};
-		525AE08125C6276800A59493 /* Chapter03-WorldTrotterTests */ = {
+		525AE08125C6276800A59493 /* Chapter05-WorldTrotterTests */ = {
 			isa = PBXGroup;
 			children = (
 				525AE08225C6276800A59493 /* Chapter03_WorldTrotterTests.swift */,
 				525AE08425C6276800A59493 /* Info.plist */,
 			);
-			path = "Chapter03-WorldTrotterTests";
+			path = "Chapter05-WorldTrotterTests";
 			sourceTree = "<group>";
 		};
-		525AE08C25C6276800A59493 /* Chapter03-WorldTrotterUITests */ = {
+		525AE08C25C6276800A59493 /* Chapter05-WorldTrotterUITests */ = {
 			isa = PBXGroup;
 			children = (
 				525AE08D25C6276800A59493 /* Chapter03_WorldTrotterUITests.swift */,
 				525AE08F25C6276800A59493 /* Info.plist */,
 			);
-			path = "Chapter03-WorldTrotterUITests";
+			path = "Chapter05-WorldTrotterUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 525AE06325C6276700A59493 /* Build configuration list for PBXProject "Lab03-WorldTrotter" */;
+			buildConfigurationList = 525AE06325C6276700A59493 /* Build configuration list for PBXProject "Chapter05-WorldTrotter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -564,7 +564,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		525AE06325C6276700A59493 /* Build configuration list for PBXProject "Lab03-WorldTrotter" */ = {
+		525AE06325C6276700A59493 /* Build configuration list for PBXProject "Chapter05-WorldTrotter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				525AE09025C6276800A59493 /* Debug */,

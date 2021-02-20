@@ -11,7 +11,7 @@
         <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="Chapter05_WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="Lab03_WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,11 @@
         <!--Map-->
         <scene sceneID="zHC-BC-EpE">
             <objects>
-                <viewController id="hY5-7A-B7v" customClass="MapViewController" customModule="Chapter05_WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hY5-7A-B7v" customClass="MapViewController" customModule="Lab03_WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="Kc4-o3-iwq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </mapView>
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="DDl-Wy-lRB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zv-lZ-jo3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -101,7 +105,7 @@
         <!--Item-->
         <scene sceneID="S7c-7Y-FwM">
             <objects>
-                <viewController id="X7a-8g-Aso" customClass="QuizViewController" customModule="Chapter05_WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="X7a-8g-Aso" customClass="QuizViewController" customModule="Lab03_WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eOF-lQ-fb1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
