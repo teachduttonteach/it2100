@@ -11,7 +11,7 @@ import WebKit
 class ViewController: UIViewController {
 
     enum AppleURLS: String {
-        case apple = "https://en.wikipedia.org/wiki/Apple_Inc"
+        case apple = "https://en.wikipedia.org/wiki/Apple_Inc."
         case ios = "https://en.wikipedia.org/wiki/IOS"
         case xcode = "https://en.wikipedia.org/wiki/Xcode"
         case swift = "https://en.wikipedia.org/wiki/Swift_(programming_language)"

@@ -16,55 +16,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTq-IF-0tw">
-                                <rect key="frame" x="151.5" y="52" width="111" height="84"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6z1-Is-iCf">
-                                <rect key="frame" x="59.5" y="144" width="295" height="43"/>
+                                <rect key="frame" x="59.5" y="145.5" width="295" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1x-4n-8ow">
-                                <rect key="frame" x="150" y="195" width="114" height="43"/>
+                                <rect key="frame" x="150" y="196.5" width="114" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZe-rK-N2d">
-                                <rect key="frame" x="148.5" y="246" width="117" height="84"/>
+                                <rect key="frame" x="148.5" y="247.5" width="117" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6z-mc-n8K">
-                                <rect key="frame" x="84" y="338" width="246" height="43"/>
+                                <rect key="frame" x="84" y="339.5" width="246" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="value" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XhU-yL-w0n">
+                                <rect key="frame" x="129" y="52" width="156" height="85.5"/>
+                                <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="fahrenheitValueFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="6p2-uC-X4q"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="csG-wZ-ty7"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="VTq-IF-0tw" firstAttribute="centerX" secondItem="6z1-Is-iCf" secondAttribute="centerX" id="1op-yA-jIa"/>
                             <constraint firstItem="q1x-4n-8ow" firstAttribute="top" secondItem="6z1-Is-iCf" secondAttribute="bottom" constant="8" id="CLn-ax-1Lx"/>
                             <constraint firstItem="d6z-mc-n8K" firstAttribute="centerX" secondItem="6z1-Is-iCf" secondAttribute="centerX" id="Hl8-QO-mgb"/>
                             <constraint firstItem="d6z-mc-n8K" firstAttribute="top" secondItem="eZe-rK-N2d" secondAttribute="bottom" constant="8" id="OQy-PK-yzh"/>
                             <constraint firstItem="eZe-rK-N2d" firstAttribute="top" secondItem="q1x-4n-8ow" secondAttribute="bottom" constant="8" id="Ona-lU-caw"/>
+                            <constraint firstItem="d6z-mc-n8K" firstAttribute="centerX" secondItem="6z1-Is-iCf" secondAttribute="centerX" id="S0m-Wk-mZL"/>
+                            <constraint firstItem="XhU-yL-w0n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="SGD-jh-0iN"/>
                             <constraint firstItem="q1x-4n-8ow" firstAttribute="centerX" secondItem="6z1-Is-iCf" secondAttribute="centerX" id="XYY-Fr-3ua"/>
+                            <constraint firstItem="eZe-rK-N2d" firstAttribute="centerX" secondItem="6z1-Is-iCf" secondAttribute="centerX" id="bxB-Mn-Wjc"/>
                             <constraint firstItem="eZe-rK-N2d" firstAttribute="centerX" secondItem="6z1-Is-iCf" secondAttribute="centerX" id="fvX-3k-hrm"/>
-                            <constraint firstItem="VTq-IF-0tw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="mcc-CD-i9U"/>
-                            <constraint firstItem="6z1-Is-iCf" firstAttribute="top" secondItem="VTq-IF-0tw" secondAttribute="bottom" constant="8" id="tcO-Pr-8k9"/>
-                            <constraint firstItem="VTq-IF-0tw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xmh-uM-kc0"/>
+                            <constraint firstItem="6z1-Is-iCf" firstAttribute="top" secondItem="XhU-yL-w0n" secondAttribute="bottom" constant="8" id="ji4-dK-gnR"/>
+                            <constraint firstItem="XhU-yL-w0n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ptK-CR-4K0"/>
+                            <constraint firstItem="XhU-yL-w0n" firstAttribute="centerX" secondItem="6z1-Is-iCf" secondAttribute="centerX" id="wjY-IQ-tqF"/>
+                            <constraint firstItem="q1x-4n-8ow" firstAttribute="centerX" secondItem="6z1-Is-iCf" secondAttribute="centerX" id="xTc-QU-wkM"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="I0A-6b-QhH" appends="YES" id="gfj-u5-isU"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" id="YgJ-He-ysb"/>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="eZe-rK-N2d" id="qOl-T5-kGu"/>
+                        <outlet property="textField" destination="XhU-yL-w0n" id="Gza-5H-9ac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="I0A-6b-QhH">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="mDZ-Mb-caf"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="53.571428571428569"/>
         </scene>
