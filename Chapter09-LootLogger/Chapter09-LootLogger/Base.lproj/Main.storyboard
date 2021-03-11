@@ -81,6 +81,9 @@
                                         <constraint firstItem="Jel-XS-P9o" firstAttribute="top" secondItem="Wa5-Tw-65N" secondAttribute="bottom" constant="8" symbolic="YES" id="tyP-kL-BdR"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="Jel-XS-P9o" firstAttribute="leading" secondItem="rM8-GL-OfS" secondAttribute="leading" constant="34" id="TWt-la-NGF"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="nameLabel" destination="Wa5-Tw-65N" id="w3N-lV-qXc"/>
                                     <outlet property="serialNumberLabel" destination="Jel-XS-P9o" id="CID-Is-SuR"/>
