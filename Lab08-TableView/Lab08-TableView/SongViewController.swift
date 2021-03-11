@@ -39,6 +39,10 @@ class SongViewController: UITableViewController {
         return cell
     }
  
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+
+        return NSLocalizedString("Songs", comment: "theSongs")
+    }
  
 
 }
