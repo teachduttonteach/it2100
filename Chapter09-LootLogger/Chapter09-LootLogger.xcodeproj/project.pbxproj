@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52FC074E25F9A3940049218F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC074D25F9A3940049218F /* AppDelegate.swift */; };
+		52FC075025F9A3940049218F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC074F25F9A3940049218F /* SceneDelegate.swift */; };
+		52FC075525F9A3940049218F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC075325F9A3940049218F /* Main.storyboard */; };
+		52FC075725F9A3970049218F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FC075625F9A3970049218F /* Assets.xcassets */; };
+		52FC075A25F9A3970049218F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC075825F9A3970049218F /* LaunchScreen.storyboard */; };
+		52FC076525F9A3970049218F /* Chapter09_LootLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC076425F9A3970049218F /* Chapter09_LootLoggerTests.swift */; };
+		52FC077025F9A3970049218F /* Chapter09_LootLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC076F25F9A3970049218F /* Chapter09_LootLoggerUITests.swift */; };
+		52FC078125F9A4B10049218F /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC078025F9A4B10049218F /* ItemsViewController.swift */; };
+		52FC078925F9A6E80049218F /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC078825F9A6E80049218F /* Items.swift */; };
+		52FC078E25F9AB950049218F /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC078D25F9AB950049218F /* ItemStore.swift */; };
+		52FC079325F9BBE40049218F /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC079225F9BBE40049218F /* ItemCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52FC076125F9A3970049218F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FC074225F9A3940049218F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52FC074925F9A3940049218F;
+			remoteInfo = "Chapter09-LootLogger";
+		};
+		52FC076C25F9A3970049218F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FC074225F9A3940049218F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52FC074925F9A3940049218F;
+			remoteInfo = "Chapter09-LootLogger";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52FC074A25F9A3940049218F /* Chapter09-LootLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter09-LootLogger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FC074D25F9A3940049218F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52FC074F25F9A3940049218F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		52FC075425F9A3940049218F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52FC075625F9A3970049218F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52FC075925F9A3970049218F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52FC075B25F9A3970049218F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FC076025F9A3970049218F /* Chapter09-LootLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chapter09-LootLoggerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FC076425F9A3970049218F /* Chapter09_LootLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter09_LootLoggerTests.swift; sourceTree = "<group>"; };
+		52FC076625F9A3970049218F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FC076B25F9A3970049218F /* Chapter09-LootLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chapter09-LootLoggerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FC076F25F9A3970049218F /* Chapter09_LootLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter09_LootLoggerUITests.swift; sourceTree = "<group>"; };
+		52FC077125F9A3970049218F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FC078025F9A4B10049218F /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		52FC078825F9A6E80049218F /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		52FC078D25F9AB950049218F /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		52FC079225F9BBE40049218F /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52FC074725F9A3940049218F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FC075D25F9A3970049218F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FC076825F9A3970049218F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52FC074125F9A3940049218F = {
+			isa = PBXGroup;
+			children = (
+				52FC074C25F9A3940049218F /* Chapter09-LootLogger */,
+				52FC076325F9A3970049218F /* Chapter09-LootLoggerTests */,
+				52FC076E25F9A3970049218F /* Chapter09-LootLoggerUITests */,
+				52FC074B25F9A3940049218F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52FC074B25F9A3940049218F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52FC074A25F9A3940049218F /* Chapter09-LootLogger.app */,
+				52FC076025F9A3970049218F /* Chapter09-LootLoggerTests.xctest */,
+				52FC076B25F9A3970049218F /* Chapter09-LootLoggerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52FC074C25F9A3940049218F /* Chapter09-LootLogger */ = {
+			isa = PBXGroup;
+			children = (
+				52FC074D25F9A3940049218F /* AppDelegate.swift */,
+				52FC074F25F9A3940049218F /* SceneDelegate.swift */,
+				52FC075325F9A3940049218F /* Main.storyboard */,
+				52FC075625F9A3970049218F /* Assets.xcassets */,
+				52FC075825F9A3970049218F /* LaunchScreen.storyboard */,
+				52FC075B25F9A3970049218F /* Info.plist */,
+				52FC078025F9A4B10049218F /* ItemsViewController.swift */,
+				52FC078825F9A6E80049218F /* Items.swift */,
+				52FC078D25F9AB950049218F /* ItemStore.swift */,
+				52FC079225F9BBE40049218F /* ItemCell.swift */,
+			);
+			path = "Chapter09-LootLogger";
+			sourceTree = "<group>";
+		};
+		52FC076325F9A3970049218F /* Chapter09-LootLoggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				52FC076425F9A3970049218F /* Chapter09_LootLoggerTests.swift */,
+				52FC076625F9A3970049218F /* Info.plist */,
+			);
+			path = "Chapter09-LootLoggerTests";
+			sourceTree = "<group>";
+		};
+		52FC076E25F9A3970049218F /* Chapter09-LootLoggerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52FC076F25F9A3970049218F /* Chapter09_LootLoggerUITests.swift */,
+				52FC077125F9A3970049218F /* Info.plist */,
+			);
+			path = "Chapter09-LootLoggerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52FC074925F9A3940049218F /* Chapter09-LootLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FC077425F9A3970049218F /* Build configuration list for PBXNativeTarget "Chapter09-LootLogger" */;
+			buildPhases = (
+				52FC074625F9A3940049218F /* Sources */,
+				52FC074725F9A3940049218F /* Frameworks */,
+				52FC074825F9A3940049218F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chapter09-LootLogger";
+			productName = "Chapter09-LootLogger";
+			productReference = 52FC074A25F9A3940049218F /* Chapter09-LootLogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52FC075F25F9A3970049218F /* Chapter09-LootLoggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FC077725F9A3970049218F /* Build configuration list for PBXNativeTarget "Chapter09-LootLoggerTests" */;
+			buildPhases = (
+				52FC075C25F9A3970049218F /* Sources */,
+				52FC075D25F9A3970049218F /* Frameworks */,
+				52FC075E25F9A3970049218F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52FC076225F9A3970049218F /* PBXTargetDependency */,
+			);
+			name = "Chapter09-LootLoggerTests";
+			productName = "Chapter09-LootLoggerTests";
+			productReference = 52FC076025F9A3970049218F /* Chapter09-LootLoggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52FC076A25F9A3970049218F /* Chapter09-LootLoggerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FC077A25F9A3970049218F /* Build configuration list for PBXNativeTarget "Chapter09-LootLoggerUITests" */;
+			buildPhases = (
+				52FC076725F9A3970049218F /* Sources */,
+				52FC076825F9A3970049218F /* Frameworks */,
+				52FC076925F9A3970049218F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52FC076D25F9A3970049218F /* PBXTargetDependency */,
+			);
+			name = "Chapter09-LootLoggerUITests";
+			productName = "Chapter09-LootLoggerUITests";
+			productReference = 52FC076B25F9A3970049218F /* Chapter09-LootLoggerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52FC074225F9A3940049218F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					52FC074925F9A3940049218F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					52FC075F25F9A3970049218F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 52FC074925F9A3940049218F;
+					};
+					52FC076A25F9A3970049218F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 52FC074925F9A3940049218F;
+					};
+				};
+			};
+			buildConfigurationList = 52FC074525F9A3940049218F /* Build configuration list for PBXProject "Chapter09-LootLogger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52FC074125F9A3940049218F;
+			productRefGroup = 52FC074B25F9A3940049218F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52FC074925F9A3940049218F /* Chapter09-LootLogger */,
+				52FC075F25F9A3970049218F /* Chapter09-LootLoggerTests */,
+				52FC076A25F9A3970049218F /* Chapter09-LootLoggerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52FC074825F9A3940049218F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FC075A25F9A3970049218F /* LaunchScreen.storyboard in Resources */,
+				52FC075725F9A3970049218F /* Assets.xcassets in Resources */,
+				52FC075525F9A3940049218F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FC075E25F9A3970049218F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FC076925F9A3970049218F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52FC074625F9A3940049218F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FC078925F9A6E80049218F /* Items.swift in Sources */,
+				52FC078125F9A4B10049218F /* ItemsViewController.swift in Sources */,
+				52FC079325F9BBE40049218F /* ItemCell.swift in Sources */,
+				52FC074E25F9A3940049218F /* AppDelegate.swift in Sources */,
+				52FC078E25F9AB950049218F /* ItemStore.swift in Sources */,
+				52FC075025F9A3940049218F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FC075C25F9A3970049218F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FC076525F9A3970049218F /* Chapter09_LootLoggerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FC076725F9A3970049218F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FC077025F9A3970049218F /* Chapter09_LootLoggerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52FC076225F9A3970049218F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52FC074925F9A3940049218F /* Chapter09-LootLogger */;
+			targetProxy = 52FC076125F9A3970049218F /* PBXContainerItemProxy */;
+		};
+		52FC076D25F9A3970049218F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52FC074925F9A3940049218F /* Chapter09-LootLogger */;
+			targetProxy = 52FC076C25F9A3970049218F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52FC075325F9A3940049218F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FC075425F9A3940049218F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52FC075825F9A3970049218F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FC075925F9A3970049218F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52FC077225F9A3970049218F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52FC077325F9A3970049218F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52FC077525F9A3970049218F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F95SX6GW52;
+				INFOPLIST_FILE = "Chapter09-LootLogger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it2100.tric.edu.Chapter09-LootLogger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52FC077625F9A3970049218F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F95SX6GW52;
+				INFOPLIST_FILE = "Chapter09-LootLogger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it2100.tric.edu.Chapter09-LootLogger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52FC077825F9A3970049218F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F95SX6GW52;
+				INFOPLIST_FILE = "Chapter09-LootLoggerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it2100.tric.edu.Chapter09-LootLoggerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chapter09-LootLogger.app/Chapter09-LootLogger";
+			};
+			name = Debug;
+		};
+		52FC077925F9A3970049218F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F95SX6GW52;
+				INFOPLIST_FILE = "Chapter09-LootLoggerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it2100.tric.edu.Chapter09-LootLoggerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chapter09-LootLogger.app/Chapter09-LootLogger";
+			};
+			name = Release;
+		};
+		52FC077B25F9A3970049218F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F95SX6GW52;
+				INFOPLIST_FILE = "Chapter09-LootLoggerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it2100.tric.edu.Chapter09-LootLoggerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Chapter09-LootLogger";
+			};
+			name = Debug;
+		};
+		52FC077C25F9A3970049218F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F95SX6GW52;
+				INFOPLIST_FILE = "Chapter09-LootLoggerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it2100.tric.edu.Chapter09-LootLoggerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Chapter09-LootLogger";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52FC074525F9A3940049218F /* Build configuration list for PBXProject "Chapter09-LootLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FC077225F9A3970049218F /* Debug */,
+				52FC077325F9A3970049218F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FC077425F9A3970049218F /* Build configuration list for PBXNativeTarget "Chapter09-LootLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FC077525F9A3970049218F /* Debug */,
+				52FC077625F9A3970049218F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FC077725F9A3970049218F /* Build configuration list for PBXNativeTarget "Chapter09-LootLoggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FC077825F9A3970049218F /* Debug */,
+				52FC077925F9A3970049218F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FC077A25F9A3970049218F /* Build configuration list for PBXNativeTarget "Chapter09-LootLoggerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FC077B25F9A3970049218F /* Debug */,
+				52FC077C25F9A3970049218F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52FC074225F9A3940049218F /* Project object */;
+}
