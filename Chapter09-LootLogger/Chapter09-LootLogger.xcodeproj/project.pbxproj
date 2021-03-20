@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52C1EEE5260645BD00917F67 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C1EEE4260645BD00917F67 /* DetailViewController.swift */; };
 		52FC074E25F9A3940049218F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC074D25F9A3940049218F /* AppDelegate.swift */; };
 		52FC075025F9A3940049218F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC074F25F9A3940049218F /* SceneDelegate.swift */; };
 		52FC075525F9A3940049218F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC075325F9A3940049218F /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52C1EEE4260645BD00917F67 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		52FC074A25F9A3940049218F /* Chapter09-LootLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter09-LootLogger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FC074D25F9A3940049218F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52FC074F25F9A3940049218F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				52FC078825F9A6E80049218F /* Items.swift */,
 				52FC078D25F9AB950049218F /* ItemStore.swift */,
 				52FC079225F9BBE40049218F /* ItemCell.swift */,
+				52C1EEE4260645BD00917F67 /* DetailViewController.swift */,
 			);
 			path = "Chapter09-LootLogger";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				52FC074E25F9A3940049218F /* AppDelegate.swift in Sources */,
 				52FC078E25F9AB950049218F /* ItemStore.swift in Sources */,
 				52FC075025F9A3940049218F /* SceneDelegate.swift in Sources */,
+				52C1EEE5260645BD00917F67 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
