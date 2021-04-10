@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5216C2622621F73C001AB720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5216C2612621F73C001AB720 /* AppDelegate.swift */; };
+		5216C2642621F73C001AB720 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5216C2632621F73C001AB720 /* SceneDelegate.swift */; };
+		5216C2662621F73C001AB720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5216C2652621F73C001AB720 /* ViewController.swift */; };
+		5216C2692621F73C001AB720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5216C2672621F73C001AB720 /* Main.storyboard */; };
+		5216C26B2621F73D001AB720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5216C26A2621F73D001AB720 /* Assets.xcassets */; };
+		5216C26E2621F73D001AB720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5216C26C2621F73D001AB720 /* LaunchScreen.storyboard */; };
+		5216C2792621F73D001AB720 /* Lab12_ButtonAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5216C2782621F73D001AB720 /* Lab12_ButtonAppTests.swift */; };
+		5216C2842621F73D001AB720 /* Lab12_ButtonAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5216C2832621F73D001AB720 /* Lab12_ButtonAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5216C2752621F73D001AB720 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5216C2562621F73C001AB720 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5216C25D2621F73C001AB720;
+			remoteInfo = "Lab12-ButtonApp";
+		};
+		5216C2802621F73D001AB720 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5216C2562621F73C001AB720 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5216C25D2621F73C001AB720;
+			remoteInfo = "Lab12-ButtonApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5216C25E2621F73C001AB720 /* Lab12-ButtonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab12-ButtonApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5216C2612621F73C001AB720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5216C2632621F73C001AB720 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5216C2652621F73C001AB720 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5216C2682621F73C001AB720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5216C26A2621F73D001AB720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5216C26D2621F73D001AB720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5216C26F2621F73D001AB720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5216C2742621F73D001AB720 /* Lab12-ButtonAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lab12-ButtonAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5216C2782621F73D001AB720 /* Lab12_ButtonAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab12_ButtonAppTests.swift; sourceTree = "<group>"; };
+		5216C27A2621F73D001AB720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5216C27F2621F73D001AB720 /* Lab12-ButtonAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lab12-ButtonAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5216C2832621F73D001AB720 /* Lab12_ButtonAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab12_ButtonAppUITests.swift; sourceTree = "<group>"; };
+		5216C2852621F73D001AB720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5216C25B2621F73C001AB720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5216C2712621F73D001AB720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5216C27C2621F73D001AB720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5216C2552621F73C001AB720 = {
+			isa = PBXGroup;
+			children = (
+				5216C2602621F73C001AB720 /* Lab12-ButtonApp */,
+				5216C2772621F73D001AB720 /* Lab12-ButtonAppTests */,
+				5216C2822621F73D001AB720 /* Lab12-ButtonAppUITests */,
+				5216C25F2621F73C001AB720 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5216C25F2621F73C001AB720 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5216C25E2621F73C001AB720 /* Lab12-ButtonApp.app */,
+				5216C2742621F73D001AB720 /* Lab12-ButtonAppTests.xctest */,
+				5216C27F2621F73D001AB720 /* Lab12-ButtonAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5216C2602621F73C001AB720 /* Lab12-ButtonApp */ = {
+			isa = PBXGroup;
+			children = (
+				5216C2612621F73C001AB720 /* AppDelegate.swift */,
+				5216C2632621F73C001AB720 /* SceneDelegate.swift */,
+				5216C2652621F73C001AB720 /* ViewController.swift */,
+				5216C2672621F73C001AB720 /* Main.storyboard */,
+				5216C26A2621F73D001AB720 /* Assets.xcassets */,
+				5216C26C2621F73D001AB720 /* LaunchScreen.storyboard */,
+				5216C26F2621F73D001AB720 /* Info.plist */,
+			);
+			path = "Lab12-ButtonApp";
+			sourceTree = "<group>";
+		};
+		5216C2772621F73D001AB720 /* Lab12-ButtonAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5216C2782621F73D001AB720 /* Lab12_ButtonAppTests.swift */,
+				5216C27A2621F73D001AB720 /* Info.plist */,
+			);
+			path = "Lab12-ButtonAppTests";
+			sourceTree = "<group>";
+		};
+		5216C2822621F73D001AB720 /* Lab12-ButtonAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5216C2832621F73D001AB720 /* Lab12_ButtonAppUITests.swift */,
+				5216C2852621F73D001AB720 /* Info.plist */,
+			);
+			path = "Lab12-ButtonAppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5216C25D2621F73C001AB720 /* Lab12-ButtonApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5216C2882621F73D001AB720 /* Build configuration list for PBXNativeTarget "Lab12-ButtonApp" */;
+			buildPhases = (
+				5216C25A2621F73C001AB720 /* Sources */,
+				5216C25B2621F73C001AB720 /* Frameworks */,
+				5216C25C2621F73C001AB720 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lab12-ButtonApp";
+			productName = "Lab12-ButtonApp";
+			productReference = 5216C25E2621F73C001AB720 /* Lab12-ButtonApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5216C2732621F73D001AB720 /* Lab12-ButtonAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5216C28B2621F73D001AB720 /* Build configuration list for PBXNativeTarget "Lab12-ButtonAppTests" */;
+			buildPhases = (
+				5216C2702621F73D001AB720 /* Sources */,
+				5216C2712621F73D001AB720 /* Frameworks */,
+				5216C2722621F73D001AB720 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5216C2762621F73D001AB720 /* PBXTargetDependency */,
+			);
+			name = "Lab12-ButtonAppTests";
+			productName = "Lab12-ButtonAppTests";
+			productReference = 5216C2742621F73D001AB720 /* Lab12-ButtonAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5216C27E2621F73D001AB720 /* Lab12-ButtonAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5216C28E2621F73D001AB720 /* Build configuration list for PBXNativeTarget "Lab12-ButtonAppUITests" */;
+			buildPhases = (
+				5216C27B2621F73D001AB720 /* Sources */,
+				5216C27C2621F73D001AB720 /* Frameworks */,
+				5216C27D2621F73D001AB720 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5216C2812621F73D001AB720 /* PBXTargetDependency */,
+			);
+			name = "Lab12-ButtonAppUITests";
+			productName = "Lab12-ButtonAppUITests";
+			productReference = 5216C27F2621F73D001AB720 /* Lab12-ButtonAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5216C2562621F73C001AB720 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5216C25D2621F73C001AB720 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					5216C2732621F73D001AB720 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5216C25D2621F73C001AB720;
+					};
+					5216C27E2621F73D001AB720 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5216C25D2621F73C001AB720;
+					};
+				};
+			};
+			buildConfigurationList = 5216C2592621F73C001AB720 /* Build configuration list for PBXProject "Lab12-ButtonApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5216C2552621F73C001AB720;
+			productRefGroup = 5216C25F2621F73C001AB720 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5216C25D2621F73C001AB720 /* Lab12-ButtonApp */,
+				5216C2732621F73D001AB720 /* Lab12-ButtonAppTests */,
+				5216C27E2621F73D001AB720 /* Lab12-ButtonAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5216C25C2621F73C001AB720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5216C26E2621F73D001AB720 /* LaunchScreen.storyboard in Resources */,
+				5216C26B2621F73D001AB720 /* Assets.xcassets in Resources */,
+				5216C2692621F73C001AB720 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5216C2722621F73D001AB720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5216C27D2621F73D001AB720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5216C25A2621F73C001AB720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5216C2662621F73C001AB720 /* ViewController.swift in Sources */,
+				5216C2622621F73C001AB720 /* AppDelegate.swift in Sources */,
+				5216C2642621F73C001AB720 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5216C2702621F73D001AB720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5216C2792621F73D001AB720 /* Lab12_ButtonAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5216C27B2621F73D001AB720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5216C2842621F73D001AB720 /* Lab12_ButtonAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5216C2762621F73D001AB720 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5216C25D2621F73C001AB720 /* Lab12-ButtonApp */;
+			targetProxy = 5216C2752621F73D001AB720 /* PBXContainerItemProxy */;
+		};
+		5216C2812621F73D001AB720 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5216C25D2621F73C001AB720 /* Lab12-ButtonApp */;
+			targetProxy = 5216C2802621F73D001AB720 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5216C2672621F73C001AB720 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5216C2682621F73C001AB720 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5216C26C2621F73D001AB720 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5216C26D2621F73D001AB720 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5216C2862621F73D001AB720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5216C2872621F73D001AB720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5216C2892621F73D001AB720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F95SX6GW52;
+				INFOPLIST_FILE = "Lab12-ButtonApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it2100.tric.edu.Lab12-ButtonApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5216C28A2621F73D001AB720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F95SX6GW52;
+				INFOPLIST_FILE = "Lab12-ButtonApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it2100.tric.edu.Lab12-ButtonApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5216C28C2621F73D001AB720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F95SX6GW52;
+				INFOPLIST_FILE = "Lab12-ButtonAppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it2100.tric.edu.Lab12-ButtonAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lab12-ButtonApp.app/Lab12-ButtonApp";
+			};
+			name = Debug;
+		};
+		5216C28D2621F73D001AB720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F95SX6GW52;
+				INFOPLIST_FILE = "Lab12-ButtonAppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it2100.tric.edu.Lab12-ButtonAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lab12-ButtonApp.app/Lab12-ButtonApp";
+			};
+			name = Release;
+		};
+		5216C28F2621F73D001AB720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F95SX6GW52;
+				INFOPLIST_FILE = "Lab12-ButtonAppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it2100.tric.edu.Lab12-ButtonAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lab12-ButtonApp";
+			};
+			name = Debug;
+		};
+		5216C2902621F73D001AB720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F95SX6GW52;
+				INFOPLIST_FILE = "Lab12-ButtonAppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it2100.tric.edu.Lab12-ButtonAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lab12-ButtonApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5216C2592621F73C001AB720 /* Build configuration list for PBXProject "Lab12-ButtonApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5216C2862621F73D001AB720 /* Debug */,
+				5216C2872621F73D001AB720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5216C2882621F73D001AB720 /* Build configuration list for PBXNativeTarget "Lab12-ButtonApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5216C2892621F73D001AB720 /* Debug */,
+				5216C28A2621F73D001AB720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5216C28B2621F73D001AB720 /* Build configuration list for PBXNativeTarget "Lab12-ButtonAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5216C28C2621F73D001AB720 /* Debug */,
+				5216C28D2621F73D001AB720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5216C28E2621F73D001AB720 /* Build configuration list for PBXNativeTarget "Lab12-ButtonAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5216C28F2621F73D001AB720 /* Debug */,
+				5216C2902621F73D001AB720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5216C2562621F73C001AB720 /* Project object */;
+}
