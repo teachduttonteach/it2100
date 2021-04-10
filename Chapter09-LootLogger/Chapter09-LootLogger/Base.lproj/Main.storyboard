@@ -90,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cxM-1f-ivv">
-                                <rect key="frame" x="0.0" y="96" width="414" height="758"/>
+                                <rect key="frame" x="0.0" y="96" width="414" height="709"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JPG-7n-qb0">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
@@ -157,7 +157,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPh-VY-mhb">
-                                        <rect key="frame" x="0.0" y="126" width="414" height="632"/>
+                                        <rect key="frame" x="0.0" y="126" width="414" height="583"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -168,6 +168,16 @@
                                     <constraint firstItem="NEP-AI-kUd" firstAttribute="leading" secondItem="LQO-Vo-lM9" secondAttribute="leading" id="9pa-TY-uc4"/>
                                 </constraints>
                             </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zW1-gd-UtE">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="Opb-Mu-SuZ">
+                                        <connections>
+                                            <action selector="choosePhotoSource:" destination="Ldl-IK-rHm" id="sog-rK-2Rt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9a6-eN-1Si"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -175,8 +185,11 @@
                         <constraints>
                             <constraint firstItem="9a6-eN-1Si" firstAttribute="trailing" secondItem="cxM-1f-ivv" secondAttribute="trailing" id="5dN-uv-AeP"/>
                             <constraint firstItem="cxM-1f-ivv" firstAttribute="leading" secondItem="9a6-eN-1Si" secondAttribute="leading" id="COW-Zv-0Xs"/>
-                            <constraint firstItem="9a6-eN-1Si" firstAttribute="bottom" secondItem="cxM-1f-ivv" secondAttribute="bottom" constant="8" id="Rtq-H0-60f"/>
+                            <constraint firstItem="zW1-gd-UtE" firstAttribute="top" secondItem="cxM-1f-ivv" secondAttribute="bottom" constant="8" id="Co4-xg-KkW"/>
+                            <constraint firstItem="9a6-eN-1Si" firstAttribute="bottom" secondItem="zW1-gd-UtE" secondAttribute="bottom" id="Ks1-11-ir1"/>
+                            <constraint firstItem="zW1-gd-UtE" firstAttribute="trailing" secondItem="cxM-1f-ivv" secondAttribute="trailing" id="YFx-kg-Xf1"/>
                             <constraint firstItem="cxM-1f-ivv" firstAttribute="top" secondItem="9a6-eN-1Si" secondAttribute="top" constant="8" id="iE8-00-7iG"/>
+                            <constraint firstItem="zW1-gd-UtE" firstAttribute="leading" secondItem="cxM-1f-ivv" secondAttribute="leading" id="ynN-au-W1a"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="tBg-Um-Yl4" appends="YES" id="MNG-6h-gzF"/>

@@ -43,7 +43,30 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         dateLabel.text = dateFormatter.string(from: item.dateCreated)
         
     }
-    
+
+    @IBAction func choosePhotoSource(_ sender: UIBarButtonItem) {
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        alertController.modalPresentationStyle = .popover
+        alertController.popoverPresentationController?.barButtonItem = sender
+        
+        let cameraAction = UIAlertAction(title: "Camera", style: .default) { _ in
+            print("Present Camera")
+        }
+        
+        let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .default) { _ in
+            print("Present Photo Library")
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alertController.addAction(cameraAction)
+        alertController.addAction(photoLibraryAction)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
 
         view.endEditing(true)
