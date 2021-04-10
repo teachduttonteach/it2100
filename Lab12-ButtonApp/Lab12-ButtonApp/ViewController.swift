@@ -38,8 +38,9 @@ class ViewController: UIViewController {
 class SecondViewController: UIViewController {
     private let tellMeSomethingLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
-        label.text = "Hey you, I'm telling you something!"
+        label.text = "Hey you, I'm telling you something! I used the formSheet presentation style and the crossDissolve transition style."
         label.textAlignment = .center
+        label.numberOfLines = 4
         return label
     }()
     
