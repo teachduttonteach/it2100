@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @State var counter: Int = 0
-    
     @State var firstName: String = "John"
     
     var body: some View {
@@ -23,13 +22,19 @@ struct ContentView: View {
                 }, label: {
                     Text("Add")
             }).padding(20)
+                .background(RadialGradient(gradient: Gradient(colors: [Color.green, Color.white]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: /*@START_MENU_TOKEN@*/5/*@END_MENU_TOKEN@*/, endRadius: 70))
+                .foregroundColor(.white)
+                .cornerRadius(40)
+
                 Button(action: {
-                    if counter > 0 {
-                        self.counter -= 1
-                    }
+                    self.counter -= 1
                 }, label: {
                     Text("Subtract")
                 }).padding(20)
+                .disabled(counter == 0)
+                .background(RadialGradient(gradient: Gradient(colors: [Color.green, Color.white]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: /*@START_MENU_TOKEN@*/5/*@END_MENU_TOKEN@*/, endRadius: 70))
+                .foregroundColor(.white)
+                .cornerRadius(40)
             }
             HStack {
                 Text("Change name: ")
@@ -37,7 +42,9 @@ struct ContentView: View {
                     "First name",
                     text: $firstName)
                 .padding(12)
-                .border(Color.red, width: 2)
+                    .background(Color.green)
+                    .foregroundColor(.white)
+                    .cornerRadius(20)
             }.padding(10)
         }
     }
